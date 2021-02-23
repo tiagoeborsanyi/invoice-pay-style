@@ -26,6 +26,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
   transition: all .5s;
 
   &.header-expand {
