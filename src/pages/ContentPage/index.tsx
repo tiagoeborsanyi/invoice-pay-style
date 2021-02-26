@@ -8,8 +8,11 @@ import {
   CLeft,
   Lineone,
   Linetwo,
-  CRight
+  CRight,
+  Imagem,
+  Categories
 } from './styles';
+import desenho from '../../assets/wallet-img.png';
 import TextBalance from '../../components/TextBalance';
 import CreditCard from '../../components/CreditCard';
 
@@ -32,7 +35,10 @@ const ContentPage = () => {
         </Linetwo>
       </CLeft>
       <CRight>
+        <Imagem style={{backgroundImage: `url(${desenho})`}} />
+        <Categories>
 
+        </Categories>
       </CRight>
     </Container>
   )

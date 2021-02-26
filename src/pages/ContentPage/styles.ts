@@ -63,7 +63,25 @@ export const Linetwo = styled.div`
 `;
 
 export const CRight = styled.div`
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
   margin: 2rem;
+`;
+
+export const Imagem = styled.div`
+  height: 40%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+`;
+
+export const Categories = styled.div`
+  height: 55%;
+  width: 100%;
+  background-color: violet;
 `;
