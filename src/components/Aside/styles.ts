@@ -26,7 +26,7 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 55px;
   transition: all .5s;
 
   &.header-expand {
@@ -36,7 +36,7 @@ export const Header = styled.header`
 `;
 
 export const LogoImg  = styled.img`
-  height: 4rem;
+  height: 5.5rem;
 `;
 
 export const MenuContainer  = styled.nav`

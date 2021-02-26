@@ -8,7 +8,7 @@ export const Container = styled.div`
   color: ${props => props.theme.colors.white};
   background-color: ${props => props.theme.colors.black};
 
-  padding: 25px;
+  padding: 55px 25px 25px 25px;
 
   height: calc(100vh - 70px);
 `;
