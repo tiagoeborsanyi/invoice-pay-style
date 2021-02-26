@@ -8,20 +8,52 @@ export const Container = styled.div`
 `;
 
 export const CLeft = styled.div`
-  flex: 0 0 75%;
+  flex: 0 0 73%;
   margin: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  position: relative;
 `;
 
 export const Lineone = styled.div`
   height: 40%;
   width: 100%;
-  background-color: rgba(0,0,0,.2);
   display: flex;
   align-items: center;
+  overflow: hidden;
+
+  .credits {
+    width: 100%;
+    display: flex;
+    margin-right: -100px;
+  }
+
+  > button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 17%;
+    right: -2.5rem;
+    z-index: 100;
+    box-shadow: 0 2px 3px 1px rgba(0,0,0,.3);
+    transition: all .3s;
+  }
+
+  > button svg {
+    font-size: 3rem;
+    color: black;
+  }
+
+  > button:active,
+  > button:hover {
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,.5);
+    transform: translateY(3px) scale(.95);
+  }
 `;
 
 export const Linetwo = styled.div`

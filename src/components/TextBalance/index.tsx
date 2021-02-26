@@ -1,14 +1,17 @@
 import React from 'react';
 
 import {
-  Container
+  Container,
+  Title,
+  TotalValue,
+  Moves
 } from './styles';
 
 const TextBalance = () => (
   <Container>
-    <h3>Your total balance</h3>
-    <span>$530.250,75</span>
-    <div>
+    <Title>Your total balance</Title>
+    <TotalValue>$530.250,75</TotalValue>
+    <Moves>
       <div>
         <p>$500,50</p>
         <span>Today's Income</span>
@@ -17,7 +20,7 @@ const TextBalance = () => (
         <p>$150,75</p>
         <span>Today's Spending</span>
       </div>
-    </div>
+    </Moves>
   </Container>
 );
 

@@ -1,15 +1,25 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
-  height: 200px;
-  width: 340px;
-  background-color: #5b4587;
+interface IBackCardColor {
+  backColor: string
+  ballonOne: string
+}
+
+export const Card = styled.div<IBackCardColor>`
+  height: 22rem;
+  width: 38rem;
+  background-color: ${props => props.backColor};
   padding: 40px 50px 20px 40px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   font-family: sans-serif;
+  position: relative;
+
+  :not(:last-child) {
+    margin-right: 3rem;
+  }
 
   .ballon-1,
   .ballon-2,
@@ -19,7 +29,7 @@ export const Card = styled.div`
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: #9986c1;
+    background-color: ${props => props.ballonOne};
     opacity: .25;
     
     position: absolute;
@@ -56,19 +66,30 @@ export const Card = styled.div`
     font-weight: 500;
   }
 
+  .icon-card {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+  }
+
   .credit {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 3rem;
     font-size: 18px;
     
     &__name {
+      font-size: 4rem;
       margin-right: 10px;
       font-weight: 600;
     }
     
     &__number {
+      font-size: 1.4rem;
       opacity: .4;
     }
   }
@@ -77,13 +98,15 @@ export const Card = styled.div`
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 18px;
+    margin-top: 2.2rem;
     
     &__name {
+      font-size: 1.4rem;
       margin-bottom: 0;  
       font-weight: 500;
     }
     &__date {
+      font-size: 1.1rem;
       margin-bottom: 0;
       opacity: .8;
     }

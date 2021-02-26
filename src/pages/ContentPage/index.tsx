@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  RiArrowRightSLine
+} from 'react-icons/ri'
 
 import {
   Container,
@@ -16,7 +19,13 @@ const ContentPage = () => {
       <CLeft>
         <Lineone>
           <TextBalance />
-          <CreditCard />
+          <div className='credits'>
+          <CreditCard backColor='#0014F5' ballonOne='#ADB4FF' />
+          <CreditCard backColor='#2EBA02' ballonOne='#D0FEC2' />
+          </div>
+          <button>
+            <RiArrowRightSLine />
+          </button>
         </Lineone>
         <Linetwo>
 
