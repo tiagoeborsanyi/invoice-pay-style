@@ -16,16 +16,16 @@ export const Form = styled.form`
     height: 5rem;
     width: 50rem;
     font-size: 1.3rem;
-    background-color: rgba(203,206,202,.20);
-    border: 1px solid rgba(0,0,0, .05);
+    background-color: rgba(203,206,202,.1);
+    border: 1px solid rgba(0,0,0, .08);
     border-radius: 4px;
     padding: 0 1rem 0 5rem;
     transition: all .4s;
 
     &:focus {
       width: 60rem;
-      background-color: rgba(203,206,202,.1);
-      border: 1px solid rgba(0,0,0, .2);
+      background-color: rgba(203,206,202,.05);
+      border: 1px solid rgba(0,0,0, .1);
     }
 
     &::placeholder {

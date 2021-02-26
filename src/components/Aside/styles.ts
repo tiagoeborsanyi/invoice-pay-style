@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   grid-area: AS;
   
-  background-color: rgba(203,206,202,.25);
+  background-color: rgba(203,206,202,.15);
   width: 12rem;
   max-width: 20rem;
   transition: all .5s;

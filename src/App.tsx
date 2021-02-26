@@ -4,13 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import light from './styles/themes/light';
 import GlobalStyles from './styles/GlobalStyles';
 import Layout from './components/Layout';
+import ContentPage from './pages/ContentPage';
 
 function App() {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Layout>
-        <h1>LAYOUT</h1>
+        <ContentPage />
       </Layout>
     </ThemeProvider>
   );
