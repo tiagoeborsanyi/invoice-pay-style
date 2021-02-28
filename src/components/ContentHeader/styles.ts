@@ -16,9 +16,9 @@ export const Form = styled.form`
     height: 5rem;
     width: 50rem;
     font-size: 1.3rem;
-    background-color: rgba(203,206,202,.1);
-    border: 1px solid rgba(0,0,0, .08);
-    border-radius: 4px;
+    background-color: rgba(203,206,202,.05);
+    border: 1px solid rgba(0,0,0, .1);
+    border-radius: 50px;
     padding: 0 1rem 0 5rem;
     transition: all .4s;
 
@@ -61,6 +61,16 @@ export const ItemContentHeader = styled.div`
       color: rgba(0,0,0,.6);
       margin-right: 1.7rem;
     }
+
+    > svg {
+      color: rgba(0,0,0,.7);
+      transition: all .3s;
+    }
+
+    > svg:hover {
+      color: rgba(0,0,0,.5);
+      cursor: pointer;
+    }
   }
 
   & > img {
@@ -81,16 +91,26 @@ export const ItemContentHeader = styled.div`
 
   &.item-svg {
     position: relative;
-
+    
     &::before {
       content: "";
-      height: 1rem;
-      width: 1rem;
+      height: 1.3rem;
+      width: 1.3rem;
       border-radius: 50%;
       background-color: ${props => props.theme.colors.warning};
 
       position: absolute;
-      right: 0;
+      top: -4px;
+      right: 3px;
+    }
+
+    > svg {
+      transition: all .2s;
+    }
+
+    > svg:hover {
+      cursor: pointer;
+      color: rgba(0,0,0,.4);
     }
   }
 `;

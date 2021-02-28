@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   grid-area: AS;
   
-  background-color: rgba(203,206,202,.15);
+  background-color: #fff;
   width: 12rem;
   max-width: 20rem;
   transition: all .5s;
@@ -51,7 +51,7 @@ export const MenuItemLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${props => props.theme.colors.gray};
+  color: ${props => props.theme.colors.white};
   text-decoration: none;
 
   &:hover,
@@ -74,9 +74,10 @@ export const MenuItemLink = styled.a`
 `;
 
 export const ExpandButton = styled.button`
-  color: ${props => props.theme.colors.gray};
+  color: ${props => props.theme.colors.white};
   margin-top: auto;
   margin-bottom: 8rem;
+  background-color: transparent;
 
   &:hover {
     color: ${props => props.theme.colors.tertiaryGray}

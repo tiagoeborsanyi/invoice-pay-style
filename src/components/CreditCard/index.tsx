@@ -28,7 +28,7 @@ const ContentPage: React.FC<ICreditCard> = ({ backColor, ballonOne }) => {
         <p className='credit__number'>**** **** 4785</p>
       </div>
       <div className='author'>
-        <p className='author__name'>Antor Paul</p>
+        <p className='author__name'>Ana Silva</p>
         <p className='author__date'>05/2022</p>
       </div>
     </Card>

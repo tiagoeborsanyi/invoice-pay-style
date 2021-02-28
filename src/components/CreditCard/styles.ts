@@ -7,7 +7,7 @@ interface IBackCardColor {
 
 export const Card = styled.div<IBackCardColor>`
   height: 22rem;
-  width: 38rem;
+  width: 36rem;
   background-color: ${props => props.backColor};
   padding: 40px 50px 20px 40px;
   border-radius: 20px;

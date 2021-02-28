@@ -10,19 +10,21 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 500;
-  color: rgba(0,0,0,.5);
+  color: rgba(0,0,0,.45);
+  margin-bottom: 2.5rem;
 `;
 
 export const TotalValue = styled.span`
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   margin: 2.6rem 0;
 `;
 
 export const Moves = styled.div`
   display: flex;
+  margin-top: 1.5rem;
    > div {
     :not(:last-child) {
       margin-right: 3rem;
