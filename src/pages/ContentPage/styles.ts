@@ -59,7 +59,6 @@ export const Lineone = styled.div`
 export const Linetwo = styled.div`
   height: 55%;
   width: 100%;
-  background-color: yellowgreen;
 `;
 
 export const CRight = styled.div`

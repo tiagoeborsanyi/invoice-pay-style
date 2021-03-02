@@ -5,6 +5,10 @@ interface ICategoriesProps {
 }
 
 export const Container = styled.div`
+height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 `;
 
 export const CTitle = styled.div`
@@ -33,14 +37,14 @@ export const CList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const CItem = styled.li`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 `;
 
 export const CItemIcon = styled.div`
