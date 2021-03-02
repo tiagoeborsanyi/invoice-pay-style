@@ -83,5 +83,4 @@ export const Imagem = styled.div`
 export const Categories = styled.div`
   height: 55%;
   width: 100%;
-  background-color: violet;
 `;

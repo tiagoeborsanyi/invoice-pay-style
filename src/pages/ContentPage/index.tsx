@@ -15,6 +15,7 @@ import {
 import desenho from '../../assets/wallet-img.png';
 import TextBalance from '../../components/TextBalance';
 import CreditCard from '../../components/CreditCard';
+import CategoriesComponent from '../../components/Categories';
 
 const ContentPage = () => {
   return (
@@ -37,7 +38,7 @@ const ContentPage = () => {
       <CRight>
         <Imagem style={{backgroundImage: `url(${desenho})`}} />
         <Categories>
-
+          <CategoriesComponent />
         </Categories>
       </CRight>
     </Container>
