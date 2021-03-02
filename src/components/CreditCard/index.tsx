@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 
 import {
   Card
@@ -21,7 +22,15 @@ const ContentPage: React.FC<ICreditCard> = ({ backColor, ballonOne }) => {
       <div className="ballon-3"></div>
       <div className="ballon-4"></div>
       <div className="ballon-5"></div>
-      <p className="value">$50.125,00</p>
+      <p className="value">
+      <CountUp 
+        end={50125.00}
+        prefix={'$ '}
+        separator='.'
+        decimal=','
+        decimals={2}
+      />
+      </p>
       <RiBankCardLine className='icon-card' />
       <div className='credit'>
         <RiVisaLine className='credit__name' />

@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import { 
   RiArrowUpLine,
   RiArrowDownLine
@@ -14,19 +15,43 @@ import {
 const TextBalance = () => (
   <Container>
     <Title>Your total balance</Title>
-    <TotalValue>$530.250,75</TotalValue>
+    <TotalValue>
+      <CountUp 
+        end={530250.75}
+        prefix={'$ '}
+        separator='.'
+        decimal=','
+        decimals={2}
+      />
+    </TotalValue>
     <Moves>
       <div>
         <div className='values-gains-expenses'>
           <RiArrowUpLine className='arrow-up' />
-          <p>$500,50</p>
+          <p>
+          <CountUp 
+            end={500.50}
+            prefix={'$ '}
+            separator='.'
+            decimal=','
+            decimals={2}
+          />
+          </p>
         </div>
         <span>Today's Income</span>
       </div>
       <div>
         <div className='values-gains-expenses'>
           <RiArrowDownLine className='arrow-down' />
-          <p>$150,75</p>
+          <p>
+          <CountUp 
+            end={150.75}
+            prefix={'$ '}
+            separator='.'
+            decimal=','
+            decimals={2}
+          />
+          </p>
         </div>
         <span>Today's Spending</span>
       </div>

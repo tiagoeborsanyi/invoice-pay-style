@@ -61,9 +61,12 @@ export const Card = styled.div<IBackCardColor>`
 
   .value {
     color: #fff;
-    font-size: 20px;
     margin: 0;
     font-weight: 500;
+
+    > span {
+      font-size: 20px;
+    }
   }
 
   .icon-card {

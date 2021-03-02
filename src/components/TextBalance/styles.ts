@@ -17,10 +17,13 @@ export const Title = styled.h3`
 `;
 
 export const TotalValue = styled.span`
-  font-size: 3.8rem;
   font-weight: 700;
   color: rgba(0,0,0,.85);
   margin: 2.6rem 0;
+
+  > span {
+    font-size: 3.8rem;
+  }
 `;
 
 export const Moves = styled.div`
@@ -37,12 +40,12 @@ export const Moves = styled.div`
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 1rem;
-
-    > p {
+    
+    > p span {
       font-size: 1.5rem;
       font-weight: 500;
       color: rgba(0,0,0,.8);
-    } 
+    }
 
     .arrow-up {
       color: ${props => props.theme.colors.greenPrimary};;
