@@ -1,4 +1,8 @@
 import React from 'react';
+import { 
+  RiArrowUpLine,
+  RiArrowDownLine
+ } from "react-icons/ri";
 
 import {
   Container,
@@ -13,11 +17,17 @@ const TextBalance = () => (
     <TotalValue>$530.250,75</TotalValue>
     <Moves>
       <div>
-        <p>$500,50</p>
+        <div className='values-gains-expenses'>
+          <RiArrowUpLine className='arrow-up' />
+          <p>$500,50</p>
+        </div>
         <span>Today's Income</span>
       </div>
       <div>
-        <p>$150,75</p>
+        <div className='values-gains-expenses'>
+          <RiArrowDownLine className='arrow-down' />
+          <p>$150,75</p>
+        </div>
         <span>Today's Spending</span>
       </div>
     </Moves>

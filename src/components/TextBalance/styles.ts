@@ -19,6 +19,7 @@ export const Title = styled.h3`
 export const TotalValue = styled.span`
   font-size: 3.8rem;
   font-weight: 700;
+  color: rgba(0,0,0,.85);
   margin: 2.6rem 0;
 `;
 
@@ -31,14 +32,34 @@ export const Moves = styled.div`
     }
    }
 
-   > div p {
-     font-size: 1.6rem;
-     margin-bottom: 1rem;
-   }
+   > div .values-gains-expenses {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    > p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: rgba(0,0,0,.8);
+    } 
+
+    .arrow-up {
+      color: ${props => props.theme.colors.greenPrimary};;
+    }
+    .arrow-down {
+      color: ${props => props.theme.colors.warning};
+    }
+    > svg {
+      font-size: 1.8rem;
+      margin-right: .5rem;
+    }
+       
+  }
 
    > div span {
      font-size: 1.5rem;
-     color: rgba(0,0,0,.6);
+     color: rgba(0,0,0,.45);
      font-weight: 500;
    }
   
