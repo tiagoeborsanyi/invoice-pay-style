@@ -9,5 +9,8 @@ export const Grid = styled.div`
   'AS CT'
   'AS CT';
 
+  width: auto;
+  max-width: 170rem;
   height: 100vh;
+  margin: 0 auto;
 `;

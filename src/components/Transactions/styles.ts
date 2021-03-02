@@ -118,6 +118,7 @@ export const TItemBadge = styled.div`
     margin-right: 1rem;
     border-radius: 50%;
     background-color: ${props => props.color};
+    ${props => (props.color === 'red' || props.color === 'green') && 'transform: rotate(30deg);'}
   }
 
   > div svg {
