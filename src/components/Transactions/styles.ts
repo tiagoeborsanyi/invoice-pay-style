@@ -26,10 +26,16 @@ margin-bottom: 7rem;
     opacity: .7;
   }
   > button {
-    padding: .5rem .9rem;
+    padding: .7rem 1rem;
     border: 1px solid rgba(0,0,0, .1);
-    border-radius: 4px;
-    font-size: 1.1rem;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    transition: all .4s;
+
+    :hover {
+      transform: scale(.95);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0, .4);
+    }
   }
 `;
 

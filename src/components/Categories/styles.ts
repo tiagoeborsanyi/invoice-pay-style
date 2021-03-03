@@ -25,6 +25,12 @@ margin-bottom: 7rem;
     padding: .5rem;
     border: 1px solid rgba(0,0,0, .2);
     border-radius: 7px;
+    transition: all .4s;
+
+    :hover {
+      transform: scale(.95);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0, .4);
+    }
   }
   > button svg {
     font-size: 2.5rem;

@@ -21,11 +21,30 @@ margin-bottom: 7rem;
     font-size: 3rem;
     opacity: .7;
   }
-  > button {
-    padding: .5rem .9rem;
-    border: 1px solid rgba(0,0,0, .1);
-    border-radius: 4px;
-    font-size: 1.1rem;
+`;
+
+export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .65rem .9rem;
+  border: 1px solid rgba(0,0,0, .1);
+  border-radius: 7px;
+  font-size: 1.6rem;
+  transition: all .4s;
+
+  > span {
+    font-weight: 500;
+    color: rgba(0,0,0, .7);
+  }
+
+  > svg {
+    font-size: 2rem;
+  }
+
+  :hover {
+    transform: scale(.95);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0, .4);
   }
 `;
 

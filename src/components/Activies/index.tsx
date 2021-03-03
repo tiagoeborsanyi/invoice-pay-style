@@ -8,10 +8,12 @@ import {
   LineChart,
   Line 
 } from 'recharts';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 import { 
   Container,
   ATitle,
+  Button,
   ChartContainer,
   ChartInfo
 } from './styles'
@@ -53,7 +55,10 @@ const Activies = () => {
     <Container>
       <ATitle>
           <h3>Activies</h3>
-          <button>This Week</button>
+          <Button>
+            <span>This Week</span>
+            <RiArrowDropDownLine />
+          </Button>
         </ATitle>
 
         <ChartContainer>
