@@ -1,11 +1,17 @@
 import React from 'react';
 
 import { 
-  Container
+  Container,
+  ATitle
 } from './styles'
 
 const Activies = () => (
-  <Container>ACTIVIES</Container>
+  <Container>
+    <ATitle>
+        <h3>My Transactions</h3>
+        <button>This Week</button>
+      </ATitle>
+  </Container>
 );
 
 export default Activies;
