@@ -13,4 +13,8 @@ export const Grid = styled.div`
   max-width: 170rem;
   height: 100vh;
   margin: 0 auto;
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+  }
 `;

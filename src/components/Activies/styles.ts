@@ -8,6 +8,10 @@ export const Container = styled.div`
   align-items: flex-start;
   padding-right: 5rem;
   position: relative;
+
+  @media only screen and (max-width: 1440px) {
+    flex: 1;
+  }
 `;
 
 export const ATitle = styled.div`

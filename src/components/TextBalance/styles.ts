@@ -7,6 +7,11 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  @media only screen and (max-width: 1024px) {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const Title = styled.h3`
@@ -14,6 +19,10 @@ export const Title = styled.h3`
   font-weight: 500;
   color: rgba(0,0,0,.45);
   margin-bottom: 2.5rem;
+
+  @media only screen and (max-width: 1024px) {
+   margin-bottom: .2rem; 
+  }
 `;
 
 export const TotalValue = styled.span`

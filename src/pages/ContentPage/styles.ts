@@ -16,6 +16,12 @@ export const CLeft = styled.div`
   justify-content: space-between;
 
   position: relative;
+
+  @media only screen and (max-width: 1024px) {
+    flex: 0 0 65%;
+    width: 68%;
+    height: 1150px;
+  }
 `;
 
 export const Lineone = styled.div`
@@ -54,6 +60,15 @@ export const Lineone = styled.div`
     box-shadow: 0 2px 2px 1px rgba(0,0,0,.5);
     transform: translateY(3px) scale(.95);
   }
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    > button {
+      display: block;
+      top: 25%;
+    }
+  }
 `;
 
 export const Linetwo = styled.div`
@@ -68,6 +83,10 @@ export const CRight = styled.div`
   justify-content: space-between;
   flex: 1;
   margin: 2rem;
+
+  @media only screen and (max-width: 1024px) {
+   height: 1150px;
+  }
 `;
 
 export const Imagem = styled.div`
