@@ -2,7 +2,8 @@ import React from 'react';
 import {
   RiSearchLine,
   RiNotification3Fill,
-  RiCalendarTodoFill
+  RiCalendarTodoFill,
+  RiMenuFill
 } from "react-icons/ri";
 
 import memoji from '../../assets/memoji.png';
@@ -17,6 +18,7 @@ const ContentHeader: React.FC = () => {
   
   return (
     <Container>
+      <RiMenuFill className='menu-mobile' />
       <Form>
         <input type='text' placeholder='Search for transaction name or amount' />
         <RiSearchLine />

@@ -5,10 +5,9 @@ interface ICategoriesProps {
 }
 
 export const Container = styled.div`
-height: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 `;
 
 export const CTitle = styled.div`

@@ -6,6 +6,19 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .menu-mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .menu-mobile {
+      display: block;
+      height: 5rem;
+      width: 5rem;
+      color: black;
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -26,6 +39,10 @@ export const Form = styled.form`
       width: 60rem;
       background-color: rgba(203,206,202,.05);
       border: 1px solid rgba(0,0,0, .1);
+
+      @media only screen and (max-width: 1024px) {
+        width: 51rem;
+      }
     }
 
     &::placeholder {
@@ -51,10 +68,18 @@ export const ItemsContentHeader = styled.div`
 export const ItemContentHeader = styled.div`
   margin-left: 6rem;
 
+  @media only screen and (max-width: 1024px) {
+    margin-left: 3rem;
+  }
+
   &.item-date {
     display: flex;
     align-items: center;
     margin-right: 12rem;
+
+    @media only screen and (max-width: 1024px) {
+      margin-right: 0;
+    }
 
     & > span {
       font-size: 1.3rem;

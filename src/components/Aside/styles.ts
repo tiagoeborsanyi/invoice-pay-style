@@ -18,6 +18,10 @@ export const Container = styled.div`
     align-items: flex-start;
     padding-left: 5rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Header = styled.header`

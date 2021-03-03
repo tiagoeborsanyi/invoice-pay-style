@@ -20,7 +20,11 @@ import {
 } from './styles';
 import Logo from '../../assets/carteira.png';
 
-const Aside: React.FC = () => {
+interface IAsideProps {
+  open: boolean
+}
+
+const Aside: React.FC<IAsideProps> = ({ open }) => {
   const [expandColumn, setExpandColumn] = useState(false);
 
   const openMenu = () => {
@@ -28,7 +32,7 @@ const Aside: React.FC = () => {
   }
 
   return (
-    <Container className={expandColumn ? 'expand' : ''}>
+    <Container className={expandColumn || open ? 'expand' : ''}>
       <Header className={expandColumn ? 'header-expand' : ''}>
         <LogoImg src={Logo} alt='logo' />
       </Header>
