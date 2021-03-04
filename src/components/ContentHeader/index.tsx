@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   RiSearchLine,
   RiNotification3Fill,
@@ -6,26 +6,31 @@ import {
   RiMenuFill
 } from "react-icons/ri";
 
-// import Aside from '../Aside';
+import MenuMobile from '../MenuMobile';
 import memoji from '../../assets/memoji.png';
 import { 
   Container,
   Form,
   ItemsContentHeader,
-  ItemContentHeader
+  ItemContentHeader,
+  BackMenu
  } from './styles';
 
 const ContentHeader: React.FC = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpenMenuMobile = () => {
+    setOpen(!open);
+  }
   
   return (
     <Container>
-      <RiMenuFill className='menu-mobile' />
-      {/* <div className='aside-mobile'>
-        <Aside open={true} />
-      </div> */}
+      <RiMenuFill className='menu-mobile' onClick={handleOpenMenuMobile} />
+      <MenuMobile open={open} />
       <Form>
         <input type='text' placeholder='Search for transaction name or amount' />
         <RiSearchLine />
+        <BackMenu onClick={handleOpenMenuMobile} style={open ? {display: 'block', width: '100%', opacity: '1'} : {}} />
       </Form>
       <ItemsContentHeader>
         <ItemContentHeader className='item-date'>

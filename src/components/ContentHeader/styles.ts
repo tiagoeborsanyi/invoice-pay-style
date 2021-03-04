@@ -21,7 +21,6 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    position: relative;
     .menu-mobile {
       display: block;
       height: 5rem;
@@ -37,6 +36,19 @@ export const Container = styled.div`
 
     }
   }
+`;
+
+export const BackMenu = styled.div`
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 80;
+  opacity: 0;
+  transition: all .3s;
 `;
 
 export const Form = styled.form`

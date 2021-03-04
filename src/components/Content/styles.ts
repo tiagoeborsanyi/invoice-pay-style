@@ -12,7 +12,12 @@ export const Container = styled.div`
 
   height: calc(100vh - 70px);
 
+  @media only screen and (max-width: 768px) {
+    position: relative;
+  }
+
   @media only screen and (max-width: 425px) {
     height: 3150px;
+    position: relative;
   }
 `;

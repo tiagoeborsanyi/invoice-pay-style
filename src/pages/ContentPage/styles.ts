@@ -58,7 +58,7 @@ export const Lineone = styled.div`
     position: absolute;
     top: 17%;
     right: -2.5rem;
-    z-index: 100;
+    z-index: 30;
     box-shadow: 0 2px 3px 1px rgba(0,0,0,.3);
     transition: all .3s;
   }
