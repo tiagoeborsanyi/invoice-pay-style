@@ -17,4 +17,10 @@ export const Grid = styled.div`
   @media only screen and (max-width: 1024px) {
     height: auto;
   }
+
+  @media only screen and (max-width: 768px) {
+    .aside-mobile {
+      display: none;
+    }
+  }
 `;

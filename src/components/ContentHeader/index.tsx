@@ -6,6 +6,7 @@ import {
   RiMenuFill
 } from "react-icons/ri";
 
+// import Aside from '../Aside';
 import memoji from '../../assets/memoji.png';
 import { 
   Container,
@@ -19,6 +20,9 @@ const ContentHeader: React.FC = () => {
   return (
     <Container>
       <RiMenuFill className='menu-mobile' />
+      {/* <div className='aside-mobile'>
+        <Aside open={true} />
+      </div> */}
       <Form>
         <input type='text' placeholder='Search for transaction name or amount' />
         <RiSearchLine />

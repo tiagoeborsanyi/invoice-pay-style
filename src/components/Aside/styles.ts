@@ -9,6 +9,7 @@ export const Container = styled.div`
   grid-area: AS;
   
   background-color: #fff;
+  height: 100vh;
   width: 12rem;
   max-width: 20rem;
   transition: all .5s;
@@ -19,9 +20,9 @@ export const Container = styled.div`
     padding-left: 5rem;
   }
 
-  @media only screen and (max-width: 768px) {
+  /* @media only screen and (max-width: 768px) {
     display: none;
-  }
+  } */
 `;
 
 export const Header = styled.header`

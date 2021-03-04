@@ -8,7 +8,7 @@ export default createGlobalStyle`
   }
 
   html, border-style, #root {
-    height: 100%auto;
+    height: 100%;
   }
 
   *, button, input {

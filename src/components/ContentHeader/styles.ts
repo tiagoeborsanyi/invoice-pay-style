@@ -11,12 +11,30 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (min-width: 769px) {
+    .menu-mobile {
+      display: none;
+    }
+    .aside-mobile {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
     .menu-mobile {
       display: block;
       height: 5rem;
       width: 5rem;
       color: black;
+      z-index: 200;
+    }
+    .aside-mobile {
+      display: block;
+      position: absolute;
+      top: 70px;
+      z-index: 100;
+
     }
   }
 `;
@@ -63,6 +81,12 @@ export const Form = styled.form`
 export const ItemsContentHeader = styled.div`
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 425px) {
+    div:not(:last-child) {
+      display: none;
+    }
+  }
 `;
 
 export const ItemContentHeader = styled.div`

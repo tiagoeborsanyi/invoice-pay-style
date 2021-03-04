@@ -7,7 +7,9 @@ import Content from '../Content';
 const Layout: React.FC = ({ children }) => {
   return (
     <Grid>
-      <Aside open={false} />
+      <div className='aside-mobile'>
+        <Aside open={false} />
+      </div>
       <Content>
         {children}
       </Content>

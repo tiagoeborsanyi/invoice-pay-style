@@ -11,4 +11,8 @@ export const Container = styled.div`
   padding: 55px 25px 25px 25px;
 
   height: calc(100vh - 70px);
+
+  @media only screen and (max-width: 425px) {
+    height: 3150px;
+  }
 `;

@@ -17,6 +17,16 @@ export const Card = styled.div<IBackCardColor>`
   font-family: sans-serif;
   position: relative;
 
+  @media only screen and (max-width: 1414px) {
+    height: 18rem;
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    height: 16rem;;
+    padding-top: 20px;
+  }
+
   :not(:last-child) {
     margin-right: 3rem;
   }
@@ -84,6 +94,10 @@ export const Card = styled.div<IBackCardColor>`
     color: #fff;
     margin-top: 3rem;
     font-size: 18px;
+
+    @media only screen and (max-width: 768px) {
+    margin-top: 1.5rem;
+  }
     
     &__name {
       font-size: 4rem;

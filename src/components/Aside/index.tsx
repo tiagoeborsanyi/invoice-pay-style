@@ -40,32 +40,32 @@ const Aside: React.FC<IAsideProps> = ({ open }) => {
       <MenuContainer>
         <MenuItemLink href='#' className='selected'>
           <RiHome3Line />
-          { expandColumn ? <span className='expandTitle'>HOME</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>HOME</span> : null}
         </MenuItemLink>
 
         <MenuItemLink href='#'>
           <RiCheckboxCircleLine />
-          { expandColumn ? <span className='expandTitle'>SAVED</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>SAVED</span> : null}
         </MenuItemLink>
 
         <MenuItemLink href='#'>
           <RiUser3Line />
-          { expandColumn ? <span className='expandTitle'>MEMBERS</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>MEMBERS</span> : null}
         </MenuItemLink>
 
         <MenuItemLink href='#'>
           <RiInboxLine />
-          { expandColumn ? <span className='expandTitle'>BOX</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>BOX</span> : null}
         </MenuItemLink>
 
         <MenuItemLink href='#'>
           <RiCalendarTodoLine />
-          { expandColumn ? <span className='expandTitle'>CALENDAR</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>CALENDAR</span> : null}
         </MenuItemLink>
 
         <MenuItemLink href='#'>
           <RiSettings2Line />
-          { expandColumn ? <span className='expandTitle'>SETTINGS</span> : null}
+          { expandColumn || open ? <span className='expandTitle'>SETTINGS</span> : null}
         </MenuItemLink>
       </MenuContainer>
       <ExpandButton onClick={openMenu}>
